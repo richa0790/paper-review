@@ -39,3 +39,4 @@ CREATE TABLE `topic` (
   `topicName` varchar(50) NOT NULL,
   PRIMARY KEY (`TopicId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+alter Table Paper Add foreign key (AuthorId) References Author(emailAddr);
